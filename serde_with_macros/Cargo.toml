@@ -1,17 +1,18 @@
 [package]
 authors = ["Jonas Bushart"]
 name = "serde_with_macros"
-rust-version = "1.64"
-version = "3.1.0"
 
 categories = ["encoding"]
 description = "proc-macro library for serde_with"
 documentation = "https://docs.rs/serde_with_macros/"
-edition = "2021"
 keywords = ["serde", "utilities", "serialization", "deserialization"]
-license = "MIT OR Apache-2.0"
-readme = "README.md"
-repository = "https://github.com/jonasbb/serde_with/"
+
+edition.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+version.workspace = true
 
 include = [
     "src/**/*",
@@ -30,26 +31,20 @@ proc-macro = true
 maintenance = {status = "actively-developed"}
 
 [dependencies]
-darling = "0.20.0"
-proc-macro2 = "1.0.1"
-quote = "1.0.0"
-
-[dependencies.syn]
-features = [
-    "extra-traits",
-    "full",
-    "parsing",
-]
-version = "2.0.0"
+darling.workspace = true
+proc-macro2.workspace = true
+quote.workspace = true
+syn.workspace = true
 
 [dev-dependencies]
-expect-test = "1.4.0"
-pretty_assertions = "1.4.0"
-rustversion = "1.0.0"
-serde = {version = "1.0.157", features = ["derive"]}
-serde_json = "1.0.25"
-trybuild = "1.0.80"
-version-sync = "0.9.1"
+expect-test.workspace = true
+pretty_assertions.workspace = true
+rustversion.workspace = true
+serde.default-features = true
+serde.workspace = true
+serde_json.workspace = true
+trybuild.workspace = true
+version-sync.workspace = true
 
 [package.metadata.docs.rs]
 all-features = true

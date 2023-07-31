@@ -6,6 +6,35 @@ members = [
 ]
 resolver = "2"
 
+[workspace.package]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/jonasbb/serde_with/"
+rust-version = "1.64"
+version = "3.1.0"
+
+[workspace.dependencies]
+darling = "0.20.0"
+expect-test = "1.4.0"
+pretty_assertions = "1.4.0"
+proc-macro2 = "1.0.1"
+quote = "1.0.0"
+rustversion = "1.0.0"
+serde.default-features = false
+serde.features = ["derive"]
+serde.version = "1.0.157"
+serde_json.default-features = false
+serde_json.version = "1.0.45"
+syn.features = [
+    "extra-traits",
+    "full",
+    "parsing",
+]
+syn.version = "2.0.0"
+trybuild = "1.0.80"
+version-sync = "0.9.1"
+
 [workspace.metadata.release]
 consolidate-commits = true
 publish = false
